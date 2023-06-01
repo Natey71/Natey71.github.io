@@ -1,3 +1,4 @@
 
 let d = new Date();
-alert("Today's date is " + d);
+let name = prompt("What is your name");
+alert("hello " + name + "!");
