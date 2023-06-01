@@ -18,3 +18,7 @@ body {
 	background: #74A4BC;
 	transition: 0.5s;
 }
+dialog{
+	opacity: 0;
+	display: block;
+}
