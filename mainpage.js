@@ -9,7 +9,3 @@ let d = new Date();
       $('section:nth-of-type('+$(this).data('rel')+')').stop().fadeIn(400, 'linear').siblings('section').stop().fadeOut(400, 'linear'); 
     });
   })(jQuery);
-
-let name = prompt("What is your name");
-alert("hello " + name + "!");
-
