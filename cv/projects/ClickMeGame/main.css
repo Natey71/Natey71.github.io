@@ -1,0 +1,29 @@
+.container {
+
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px 200px 40px;
+	gap: 4px;
+	grid-template-areas: 
+	"h h h h h h h h h h h"
+    "h h h h h h h h h h h"
+	"b b b b g g g g g g g"
+	"b b b b g g g g g g g";
+}
+
+.helpful {
+    background-color: #FAE4FF;
+	grid-area: h;
+
+}
+
+.bank {
+    background-color: #E9FFE4;
+    grid-area: b;
+}
+
+.game {
+    background-color: #FFE4E9;
+    grid-area: g;
+}
