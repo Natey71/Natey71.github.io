@@ -1,29 +1,79 @@
-.container {
 
+body {
+
+	background-color: #434343;
+}
+
+.container {
 	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 40px 200px 40px;
+	grid-template-rows: minmax(150px, auto);
 	gap: 4px;
-	grid-template-areas: 
-	"h h h h h h h h h h h"
-    "h h h h h h h h h h h"
-	"b b b b g g g g g g g"
-	"b b b b g g g g g g g";
 }
 
 .helpful {
-    background-color: #FAE4FF;
-	grid-area: h;
+	grid-column: 1 / 13;
+	grid-row: 1;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
+	border: 1px solid #aaa;
+	
+}
+
+.helpful > p {
+	text-align: center;
+	font-size: 24px;
+	color: whitesmoke;
 
 }
 
+ul {
+	orientation: landscape;	
+}
 .bank {
-    background-color: #E9FFE4;
-    grid-area: b;
+	grid-column: 1 / 13;
+	grid-row: 2;
+    background-color: #efd580;
+    
 }
 
 .game {
-    background-color: #FFE4E9;
-    grid-area: g;
+	grid-column: 1 / 13;
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: minmax(50px, auto);
+	background-color: #4a689c;
 }
+button {
+	background-color: #cb5853;
+	border: none;
+	text-decoration: none;
+	color: white;
+	padding: 20px 20px;
+	margin: 20px 20px;
+	cursor: pointer;	
+}
+		 
+.buttonp {
+	grid-column: 4 ;
+	grid-row: 1
+}
+
+.buyOneAuto {
+	grid-column: 1 / 9;
+	grid-row: 2 / 6;
+	grid-template-columns: repeat(6, minmax(10px, 1fr));
+    grid-auto-rows: 100px;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 85%;
+	border: 2px solid #efd580;
+}
+
+.buyOneAuto > button {
+	background-color: #efd580;
+	color: black;
+
+}
+

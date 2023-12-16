@@ -5,21 +5,49 @@
 	--Text: #cfd0d3;
 }
 
+body {
 
+    background-color: var(--dkColor);
+}
 div.projectList {
 	display:inline-block;
-	
+	color: white;
 	position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
+    margin-right: 50%;
+    font-size: 48px;
     transform: translate(-50%, -50%);
 
 }
+p {
+	color: var(--Text); 
+	margin: 10px;
+	text-decoration: none;
+	font-size: 24px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .grow {
 	transition: all .2s ease-in-out;
+    color: white;
 }
 
 .grow:hover {
 	transform: scale(1.1);
+    background-color: var(--ltColor);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: var(--272c38);
+}
+
+a:visited {
+	color: var(--272c38);
 }
