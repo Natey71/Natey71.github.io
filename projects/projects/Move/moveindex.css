@@ -1,0 +1,23 @@
+body{
+
+    background-color: #36454f;
+
+}
+
+
+.gamecanvas {
+    margin: auto;
+    width: 800px;
+    height:650px;
+    background-color: #708090;
+    border: 8px solid #536878;
+
+}
+
+#movingBox {
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #384048;
+}
