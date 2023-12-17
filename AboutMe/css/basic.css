@@ -3,12 +3,14 @@
     --green-color: #6ab187;
     --yellow-color: #f9d56e;
     --blue-color: #5b8ea8;
+    --backgroun-blue: #094B67;
 }
 /* basic styling */
 .header {
     /* background-color: #96ceb4; */
     background-color: #ff6f69;
     align-items: center;
+    text-align: center;
     vertical-align: middle;
     display: grid;
 }
@@ -23,11 +25,9 @@
 
 .content {
     /* background-color: #ffcc5c; */
-    background-color: #f9d56e;
-    align-items: center;
-    vertical-align: middle;
+    background-color: var(--backgroun-blue);
+    border: 1.5px solid whitesmoke;
     display: grid;
-    font-size: 380%;
 }
 .footer {
     /* background-color: #88d8b0; */
@@ -36,10 +36,7 @@
     vertical-align: middle;
     display: grid;
 }
-.container {
-    text-align: center;
 
-}
 
 html {
     padding: 0 10px;
@@ -48,7 +45,7 @@ html {
 
 }
 html, body  {
-    background: #ffeead;
+    background: var(--backgroun-blue);
     color: #ffeead;
 }
 .square {
